@@ -120,6 +120,8 @@ footer .spacing-col-footer li .off  { color: #c2c1c1; text-transform: initial; f
 
 #duvidas .bg-duvidas { background-color: var(--gray-300); border-radius: 12px; padding: 60px; }
 
+.nav-link[href="#profile"], #profile { display: none; }
+
 @media only screen and (max-device-width: 1200px), screen and (max-width: 1200px) {
     nav .btn-meu-dinheiro { padding: 0; width: 55px; height: 55px; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
     .navbar-nav { gap: 30px; }

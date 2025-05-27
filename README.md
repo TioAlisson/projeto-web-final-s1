@@ -2,7 +2,7 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)  
 ![Status](https://img.shields.io/badge/status-completo-brightgreen)  
-![Tecnologias](https://img.shields.io/badge/Tecnologias-HTML5%20|%20CSS3%20|%20JavaScript-yellow)  
+![Tecnologias](https://img.shields.io/badge/Tecnologias-HTML5%20|%20CSS3%20|%20Bootstrap%20|%20JavaScript-yellow)  
 ![Responsivo](https://img.shields.io/badge/Responsivo-Sim-success)  
 
 ---
@@ -14,7 +14,7 @@ Este é o **Projeto Final** da disciplina de **Desenvolvimento Web**, realizado 
 O objetivo foi desenvolver um **site completo, responsivo e interativo**, utilizando as principais tecnologias do desenvolvimento front-end:  
 
 ✅ **HTML5** – Estrutura semântica e acessível  
-✅ **CSS3** – Estilização moderna com Flexbox/Grid, animações e design responsivo  
+✅ **CSS3 & Bootstrap** – Estilização moderna com framework CSS e customizações  
 ✅ **JavaScript (Vanilla JS)** – Funcionalidades dinâmicas sem bibliotecas externas  
 
 O projeto demonstra **boas práticas de código, organização de arquivos e usabilidade**.  
@@ -23,7 +23,7 @@ O projeto demonstra **boas práticas de código, organização de arquivos e usa
 
 ## 🎨 Demonstração  
 
-🔗 **Acesso Online:** [Link do Projeto)]()  
+🔗 **Acesso Online:** [Link do Projeto](https://tioalisson.github.io/projeto-web-final-s1/)  
 📱 **Responsivo:** Compatível com mobile, tablet e desktop  
 
 ---
@@ -35,15 +35,16 @@ projeto-web-final-s1/
 │  
 ├── assets/  
 │   ├── css/  
-│   │   ├── styles.css         # Estilos principais  
-│   │   └── responsive.css     # Media Queries (opcional)  
+│   │   ├── styles.css         # Estilos customizados  
+│   │   └── bootstrap.min.css # Bootstrap CSS  
 │   │  
 │   ├── js/  
-│   │   └── script.js          # Lógica JavaScript  
+│   │   ├── script.js          # Lógica JavaScript  
+│   │   └── bootstrap.min.js  # Bootstrap JS  
 │   │  
 │   └── images/                # Imagens otimizadas  
 │  
-├── index.html                 # Página inicial  
+├── index.html                 # Página principal  
 ├── README.md                  # Documentação  
 └── LICENSE                    # Licença MIT  
 ```
@@ -54,16 +55,15 @@ projeto-web-final-s1/
 
 | Tecnologia | Descrição |  
 |------------|-----------|  
-| **HTML5** | Estrutura semântica com tags modernas (`<section>`, `<article>`, etc.) |  
-| **CSS3** | Flexbox, Grid, variáveis (`--css-vars`), animações com `@keyframes` |  
-| **JavaScript** | Manipulação do DOM, eventos, localStorage (se aplicável) |  
-| **Git** | Controle de versão |   
+| **HTML5** | Estrutura semântica com tags modernas |  
+| **CSS3** | Customizações e estilos adicionais |  
+| **Bootstrap 5** | Framework CSS para layout responsivo e componentes |  
+| **JavaScript** | Manipulação do DOM e interatividade |  
+| **Git** | Controle de versão |  
 
 ---
 
 ## ⚡ Como Executar o Projeto Localmente  
-
-Siga os passos abaixo para rodar o projeto em sua máquina:  
 
 ### 📥 **Clone o Repositório**  
 ```bash  
@@ -73,41 +73,43 @@ cd projeto-web-final-s1
 
 ### 🌐 **Abra no Navegador**  
 1. **Método Simples:**  
-   - Clique 2x no arquivo `index.html` ou arraste-o para o navegador.  
+   - Abra o arquivo `index.html` diretamente no navegador  
 
 2. **Com Live Server (VS Code):**  
-   - Instale a extensão **Live Server**.  
-   - Clique com o botão direito no `index.html` e selecione *"Open with Live Server"*.  
+   - Instale a extensão **Live Server**  
+   - Clique com o botão direito no `index.html` → *"Open with Live Server"*  
+
 ---
 
 ## 📌 Funcionalidades Destacadas  
 
-✨ **Interatividade:**  
-- Menu hamburguer (mobile)  
-- Validação de formulários  
-- Efeitos de hover/animações CSS  
+✨ **Componentes Bootstrap:**  
+- Navbar responsiva  
+- Cards, modais, etc 
+- Sistema de grid responsivo  
+
+🎨 **Customizações CSS:**  
+- Cores e estilos personalizados  
+- Animações e efeitos visuais  
 
 📱 **Responsividade:**  
-- Media Queries para diferentes breakpoints  
-
-🔧 **Extras:**  
-- Modo escuro/claro (se implementado)  
-- Carregamento dinâmico de conteúdo  
+- Layout adaptável em todos os dispositivos  
+- Componentes que se ajustam automaticamente  
 
 ---
 
 ## 📄 Licença  
 
-Este projeto está sob a licença **MIT**.
+Este projeto está sob a licença **MIT**.  
 
 ---
 
 ## ✉️ Contato  
 
 👨‍💻 **Autor:** Alisson  
-📧 **Email:** alisson.contact.dev@gmail.com 
-🔗 **LinkedIn:** [https://www.linkedin.com/in/alisson-assis-87423b288/](https://www.linkedin.com/in/alisson-assis-87423b288/)  
+📧 **Email:** alisson.contact.dev@gmail.com  
+🔗 **LinkedIn:** [linkedin.com/in/alisson-assis-87423b288](https://www.linkedin.com/in/alisson-assis-87423b288/)  
 
 ---  
 
-Feito com ❤️ por Alisson! 
+Feito com ❤️ por Alisson! 🚀  
