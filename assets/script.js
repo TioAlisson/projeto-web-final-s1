@@ -19,6 +19,7 @@ const storage = {
 window.addEventListener('load', () => {
     atualizarSaldo();
     carregarTransacoes();
+    verificarExibirLista();
 });
 
 function atualizarSaldo() {
@@ -87,10 +88,27 @@ function adicionarTransacao(tipo, valor, descricao) {
     });
     storage.setTransacoes(transacoes);
     carregarTransacoes();
+    verificarExibirLista(); 
 }
 
 function showMessage(msg, tipo) {
     elements.msgForm.textContent = msg;
     elements.msgForm.className = `msg-form ${tipo}`;
     setTimeout(() => elements.msgForm.textContent = "", 4000);
+}
+
+function verificarExibirLista() {
+    const transacoes = storage.getTransacoes();
+    const temEntrada = transacoes.some(t => t.tipo === 'entrada');
+
+    const profileTabLink = document.querySelector('.nav-link[href="#profile"]');
+    const profileTabContent = document.getElementById('profile');
+
+    if (temEntrada) {
+        profileTabLink.style.display = 'block';
+        profileTabContent.style.display = 'block';
+    } else {
+        profileTabLink.style.display = 'none';
+        profileTabContent.style.display = 'none';
+    }
 }
