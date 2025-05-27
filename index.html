@@ -1,14 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu dinheiro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>Hello World</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/" rel="noopener noreferrer">
+                    <img src="assets/img/logo-meu-dinheiro.svg" class="img-logo" alt="Logo" width="100%">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Para Empresas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Controle de Investimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Planos</a>
+                        </li>
+                    </ul>
+                    <div class="flex-nav">
+                        <a href="/" class="btn-meu-dinheiro" rel="noopener noreferrer">
+                            <svg class="d-inline d-xl-none" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 4C13.0609 4 14.0783 4.42143 14.8284 5.17157C15.5786 5.92172 16 6.93913 16 8C16 9.06087 15.5786 10.0783 14.8284 10.8284C14.0783 11.5786 13.0609 12 12 12C10.9391 12 9.92172 11.5786 9.17157 10.8284C8.42143 10.0783 8 9.06087 8 8C8 6.93913 8.42143 5.92172 9.17157 5.17157C9.92172 4.42143 10.9391 4 12 4ZM12 6C11.4696 6 10.9609 6.21071 10.5858 6.58579C10.2107 6.96086 10 7.46957 10 8C10 8.53043 10.2107 9.03914 10.5858 9.41421C10.9609 9.78929 11.4696 10 12 10C12.5304 10 13.0391 9.78929 13.4142 9.41421C13.7893 9.03914 14 8.53043 14 8C14 7.46957 13.7893 6.96086 13.4142 6.58579C13.0391 6.21071 12.5304 6 12 6ZM12 13C14.67 13 20 14.33 20 17V20H4V17C4 14.33 9.33 13 12 13ZM12 14.9C9.03 14.9 5.9 16.36 5.9 17V18.1H18.1V17C18.1 16.36 14.97 14.9 12 14.9Z"
+                                    fill="black" />
+                            </svg>
+                            <span class="d-none d-xl-inline">Criar conta grátis</span>
+                        </a>
+                        <a href="/" class="btn-meu-dinheiro btn-gray" rel="noopener noreferrer">
+                            <svg class="d-inline d-xl-none" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5 2H16C16.7956 2 17.5587 2.31607 18.1213 2.87868C18.6839 3.44129 19 4.20435 19 5V19C19 19.2652 18.8946 19.5196 18.7071 19.7071C18.5196 19.8946 18.2652 20 18 20H15"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M12 12V14M5 2L12.588 3.518C13.268 3.65392 13.8799 4.02121 14.3197 4.55739C14.7594 5.09358 14.9998 5.76555 15 6.459V20.78C14.9999 20.9279 14.967 21.0739 14.9037 21.2076C14.8404 21.3412 14.7482 21.4592 14.6338 21.5529C14.5194 21.6466 14.3856 21.7138 14.2422 21.7496C14.0987 21.7854 13.949 21.789 13.804 21.76L6.608 20.322C6.15444 20.2313 5.74633 19.9863 5.45314 19.6286C5.15995 19.2708 4.99982 18.8225 5 18.36V2Z"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span class="d-none d-xl-inline">Entrar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="controle-financeiro">
+            <div class="container">
+                <h2>Controle financeiro conectado com os principais bancos</h2>
+                <img src="assets/img/header-bancos.webp" alt="">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="sistema row">
+                <div class="col-12 col-lg-6">
+                    <h1 class="mb-3 mt-5">Sistema para controle <br> financeiro online <br> <span>Completo, fácil e uma
+                            taxa baixa*</span></h1>
+                    <div class="padding-sistema">
+                        <h2>Mais de 500 mil pessoas utilizam o Meu Dinheiro </h2>
+                        <div class="flex-column d-flex position-relative input-conta">
+                            <input type="text" placeholder="Seu e-mail">
+                            <button class="btn-meu-dinheiro">Criar conta grátis</button>
+                        </div>
+                        <p>*Confira detalhes do plano gratuito</p>
+                    </div>
+                </div>
+                <div class="d-none d-lg-inline col-lg-6">
+                    <img src="assets/img/header-mockup.webp" alt="mockup" width="100%">
+                </div>
+                <h3 class="text-center">Único com controle de investimentos integrado</h3>
+            </div>
+        </div>
+    </header>
+
+    <section id="help">
+        <div class="container spacing">
+            <h1>Como o Meu Dinheiro vai me ajudar?</h1>
+            <h2>Proporcionando meios para você realizar seus sonhos, metas e objetivos</h2>
+            <span class="borda-b my-3"></span>
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="box">
+                        <img src="assets/img/card.webp" alt="">
+                        <h3>Controle suas despesas</h3>
+                        <p>Gerencie com precisão todas as despesas dos seus cartões de crédito. Tenha controle do cartão
+                            titular e dos adicionais. Receba lembretes para pagar suas faturas e contas em dia.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="box">
+                        <img src="assets/img/card.webp" alt="">
+                        <h3>Controle suas despesas</h3>
+                        <p>Gerencie com precisão todas as despesas dos seus cartões de crédito. Tenha controle do cartão
+                            titular e dos adicionais. Receba lembretes para pagar suas faturas e contas em dia.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="box">
+                        <img src="assets/img/card.webp" alt="">
+                        <h3>Controle suas despesas</h3>
+                        <p>Gerencie com precisão todas as despesas dos seus cartões de crédito. Tenha controle do cartão
+                            titular e dos adicionais. Receba lembretes para pagar suas faturas e contas em dia.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="box">
+                        <img src="assets/img/card.webp" alt="">
+                        <h3>Controle suas despesas</h3>
+                        <p>Gerencie com precisão todas as despesas dos seus cartões de crédito. Tenha controle do cartão
+                            titular e dos adicionais. Receba lembretes para pagar suas faturas e contas em dia.</p>
+                    </div>
+                </div>
+            </div>
+            <h4 class="mb-5">Experimente todos os recursos gratuitamente por sete dias <span>sem informar dados de
+                    compra</span></h4>
+            <a href="" class="btn-section">Crie sua conta grátis</a>
+        </div>
+    </section>
+
+    <section id="principais-recursos">
+        <div class="container spacing">
+            <h1>Nossos principais recursos</h1>
+            <h2>Tome as melhores decisões financeiras</h2>
+            <span class="borda-b my-3"></span>
+            <div class="row justify-content-around">
+                <div class="col-12 col-lg-5">
+                    <div class="item-list-principais-recursos d-flex align-items-start">
+                        <img src="assets/img/bank.webp" alt="">
+                        <div>
+                            <h3>Conexão bancária automática</h3>
+                            <p>Importe extratos do seu banco de forma automática e faça conciliação bancária.</p>
+                        </div>
+                    </div>
+                    <div class="item-list-principais-recursos d-flex align-items-start">
+                        <img src="assets/img/bank.webp" alt="">
+                        <div>
+                            <h3>Conexão bancária automática</h3>
+                            <p>Controle quanto está gastando com cada filho, veículo ou imóvel e saiba a origem das
+                                despesas e receitas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="item-list-principais-recursos d-flex align-items-start">
+                        <img src="assets/img/bank.webp" alt="">
+                        <div>
+                            <h3>Conexão bancária automática</h3>
+                            <p>Controle quanto está gastando com cada filho, veículo ou imóvel e saiba a origem das
+                                despesas e receitas.</p>
+                        </div>
+                    </div>
+                    <div class="item-list-principais-recursos d-flex align-items-start">
+                        <img src="assets/img/bank.webp" alt="">
+                        <div>
+                            <h3>Conexão bancária automática</h3>
+                            <p>Importe extratos do seu banco de forma automática e faça conciliação bancária.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn-section">Comparativo de recursos</a>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="spacing container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab"
+                        aria-controls="home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab"
+                        aria-controls="profile" aria-selected="false">Lista de Transação</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h1 class="mb-5">Controle de Gastos Pessoais</h1>
+                    <form action="" id="formulario" class="d-flex flex-column align-items-center">
+                        <div>
+                            <label for="">Descrição:</label>
+                            <input type="text" placeholder="Ex: Sálario | Valor PS5" id="descricao">
+                        </div>
+                        <div class="my-5">
+                            <label for="">Valor:</label>
+                            <input type="text" placeholder="Ex: R$2500" id="valor">
+                        </div>
+                        <p class="msg-form"></p>
+                        <h3 class="mb-4">Saldo no momento R$: <span class="saldo-page">0</span></h3>
+                        <div>
+                            <label for="tipo">Tipo:</label>
+                            <select id="tipo">
+                                <option value="entrada">Entrada</option>
+                                <option value="saida">Saida</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-meu-dinheiro mt-4">AQUI</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <h1 class="mb-5">Lista de transação</h1>
+                    <div class="lista-transacoes"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="financas">
+        <div class="container spacing">
+            <div class="row justify-content-between align-items-end">
+                <div class="col-lg-6">
+                    <div class="d-flex flex-column align-items-center">
+                        <h1>Suas finanças na palma da sua mão</h1>
+                        <h2>Disponível na Play Store e App Store</h2>
+                    </div>
+                    <div class="flex-smartphone">
+                        <img src="assets/img/google-play.webp" alt="Google Play">
+                        <img src="assets/img/app-store.svg" alt="App Store">
+                    </div>
+                </div>
+                <div class="col-lg-5 img-cell">
+                    <img src="assets/img/smartphone.webp" alt="Smartphone">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="duvidas">
+        <div class="container spacing bg-duvidas">
+            <div class="links">
+                <h2 class="mb-4">Dúvidas?</h2>
+                <p>Quaisquer dúvidas sobre os nossos serviços podem ser esclarecidas por meio do <a href="">Fale
+                        conosco</a>. Se preferir, você pode consultar nosso <a href="">manual</a> onde estão
+                    documentadas informações detalhadas sobre o uso dos recursos e funcionamento da nossa plataforma</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-evenly flex-column flex-md-row mt-5">
+                <a href="" class="btn-duvida mb-5 mb-md-0">Fale conosco</a>
+                <a href="" class="btn-duvida">Manual</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-footer spacing">
+            <a href="/" rel="noopener noreferrer">
+                <img src="assets/img/logo-meu-dinheiro.svg" class="img-logo" alt="Logo Meu Dinheiro Web" width="100%">
+            </a>
+            <p>
+                Meu Dinheiro Web – Controle financeiro online para pessoas e empresas.
+                Gerencie contas, investimentos, fluxo de caixa e projetos com segurança e praticidade.
+            </p>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="btn-duvida">👉 Acesse grátis por 7 dias</a>
+            </div>
+        </div>
+
+        <div class="bg-footer">
+            <div class="container mt-4 pt-3">
+                <div class="row justify-content-between spacing-col-footer">
+                    <div class="col-lg-7">
+                        <div class="row gap-ul">
+                            <div class="col-12 col-lg-4">
+                                <ul>
+                                    <li>
+                                        <a href="">Find a store</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Sign up for email</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Become a member</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Gift Cards</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Site Feedback</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <ul>
+                                    <li>
+                                        <a href="">Get Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="off">Order status</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="off">Delivery</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="off">Returns</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="off">Payment Options</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="off">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <ul>
+                                    <li>
+                                        <a href="">News</a>
+                                    </li>
+                                    <li>
+                                        <a href="">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="off">Carrers</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="off">Investors</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="off">Sustainable Innovation</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <h2 class="text-center my-4 my-lg-0 mb-lg-3 text-lg-end">Social</h2>
+                        <div>
+                            <ul class="d-flex justify-content-around justify-content-lg-between">
+                                <li>
+                                    <a href="">
+                                        <svg width="52" height="52" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_973_80)">
+                                                <path
+                                                    d="M19.5 0C20.7396 0 21.7995 0.440104 22.6797 1.32031C23.5599 2.20052 24 3.26042 24 4.5V19.5C24 20.7396 23.5599 21.7995 22.6797 22.6797C21.7995 23.5599 20.7396 24 19.5 24H16.5625V14.7031H19.6719L20.1406 11.0781H16.5625V8.76562C16.5625 8.18229 16.6849 7.74479 16.9297 7.45312C17.1745 7.16146 17.651 7.01562 18.3594 7.01562L20.2656 7V3.76562C19.6094 3.67188 18.6823 3.625 17.4844 3.625C16.0677 3.625 14.9349 4.04167 14.0859 4.875C13.237 5.70833 12.8125 6.88542 12.8125 8.40625V11.0781H9.6875V14.7031H12.8125V24H4.5C3.26042 24 2.20052 23.5599 1.32031 22.6797C0.440104 21.7995 0 20.7396 0 19.5V4.5C0 3.26042 0.440104 2.20052 1.32031 1.32031C2.20052 0.440104 3.26042 0 4.5 0H19.5Z"
+                                                    fill="#C2C1C1" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_973_80">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg width="52" height="52" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_973_74)">
+                                                <path
+                                                    d="M20 7.53125C19.4167 7.79167 18.7865 7.96875 18.1094 8.0625C18.8177 7.64583 19.3021 7.03646 19.5625 6.23438C18.8854 6.63021 18.1875 6.89583 17.4688 7.03125C16.8333 6.34375 16.0365 6 15.0781 6C14.1719 6 13.3984 6.32031 12.7578 6.96094C12.1172 7.60156 11.7969 8.375 11.7969 9.28125C11.7969 9.58333 11.8229 9.83333 11.875 10.0312C10.5312 9.95833 9.27083 9.61979 8.09375 9.01562C6.91667 8.41146 5.91667 7.60417 5.09375 6.59375C4.79167 7.11458 4.64062 7.66667 4.64062 8.25C4.64062 9.4375 5.11458 10.349 6.0625 10.9844C5.57292 10.974 5.05208 10.8385 4.5 10.5781V10.6094C4.5 11.3906 4.76042 12.0859 5.28125 12.6953C5.80208 13.3047 6.44271 13.6823 7.20312 13.8281C6.90104 13.9115 6.63542 13.9531 6.40625 13.9531C6.27083 13.9531 6.06771 13.9323 5.79688 13.8906C6.01562 14.5469 6.40365 15.0885 6.96094 15.5156C7.51823 15.9427 8.15104 16.1615 8.85938 16.1719C7.65104 17.1094 6.29167 17.5781 4.78125 17.5781C4.51042 17.5781 4.25 17.5625 4 17.5312C5.54167 18.5104 7.21875 19 9.03125 19C10.1979 19 11.2917 18.8151 12.3125 18.4453C13.3333 18.0755 14.2083 17.5807 14.9375 16.9609C15.6667 16.3411 16.2943 15.6276 16.8203 14.8203C17.3464 14.013 17.737 13.1693 17.9922 12.2891C18.2474 11.4089 18.375 10.5312 18.375 9.65625C18.375 9.46875 18.3698 9.32812 18.3594 9.23438C19.0156 8.76562 19.5625 8.19792 20 7.53125ZM24 4.5V19.5C24 20.7396 23.5599 21.7995 22.6797 22.6797C21.7995 23.5599 20.7396 24 19.5 24H4.5C3.26042 24 2.20052 23.5599 1.32031 22.6797C0.440104 21.7995 0 20.7396 0 19.5V4.5C0 3.26042 0.440104 2.20052 1.32031 1.32031C2.20052 0.440104 3.26042 0 4.5 0H19.5C20.7396 0 21.7995 0.440104 22.6797 1.32031C23.5599 2.20052 24 3.26042 24 4.5Z"
+                                                    fill="#C2C1C1" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_973_74">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg width="52" height="52" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_973_74)">
+                                                <path
+                                                    d="M20 7.53125C19.4167 7.79167 18.7865 7.96875 18.1094 8.0625C18.8177 7.64583 19.3021 7.03646 19.5625 6.23438C18.8854 6.63021 18.1875 6.89583 17.4688 7.03125C16.8333 6.34375 16.0365 6 15.0781 6C14.1719 6 13.3984 6.32031 12.7578 6.96094C12.1172 7.60156 11.7969 8.375 11.7969 9.28125C11.7969 9.58333 11.8229 9.83333 11.875 10.0312C10.5312 9.95833 9.27083 9.61979 8.09375 9.01562C6.91667 8.41146 5.91667 7.60417 5.09375 6.59375C4.79167 7.11458 4.64062 7.66667 4.64062 8.25C4.64062 9.4375 5.11458 10.349 6.0625 10.9844C5.57292 10.974 5.05208 10.8385 4.5 10.5781V10.6094C4.5 11.3906 4.76042 12.0859 5.28125 12.6953C5.80208 13.3047 6.44271 13.6823 7.20312 13.8281C6.90104 13.9115 6.63542 13.9531 6.40625 13.9531C6.27083 13.9531 6.06771 13.9323 5.79688 13.8906C6.01562 14.5469 6.40365 15.0885 6.96094 15.5156C7.51823 15.9427 8.15104 16.1615 8.85938 16.1719C7.65104 17.1094 6.29167 17.5781 4.78125 17.5781C4.51042 17.5781 4.25 17.5625 4 17.5312C5.54167 18.5104 7.21875 19 9.03125 19C10.1979 19 11.2917 18.8151 12.3125 18.4453C13.3333 18.0755 14.2083 17.5807 14.9375 16.9609C15.6667 16.3411 16.2943 15.6276 16.8203 14.8203C17.3464 14.013 17.737 13.1693 17.9922 12.2891C18.2474 11.4089 18.375 10.5312 18.375 9.65625C18.375 9.46875 18.3698 9.32812 18.3594 9.23438C19.0156 8.76562 19.5625 8.19792 20 7.53125ZM24 4.5V19.5C24 20.7396 23.5599 21.7995 22.6797 22.6797C21.7995 23.5599 20.7396 24 19.5 24H4.5C3.26042 24 2.20052 23.5599 1.32031 22.6797C0.440104 21.7995 0 20.7396 0 19.5V4.5C0 3.26042 0.440104 2.20052 1.32031 1.32031C2.20052 0.440104 3.26042 0 4.5 0H19.5C20.7396 0 21.7995 0.440104 22.6797 1.32031C23.5599 2.20052 24 3.26042 24 4.5Z"
+                                                    fill="#C2C1C1" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_973_74">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg width="52" height="52" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_973_66)">
+                                                <path
+                                                    d="M14.3594 18.3594V15.9062C14.3594 15.3854 14.2083 15.125 13.9062 15.125C13.7292 15.125 13.5573 15.2083 13.3906 15.375V18.875C13.5573 19.0417 13.7292 19.125 13.9062 19.125C14.2083 19.125 14.3594 18.8698 14.3594 18.3594ZM17.2344 16.4531H18.2656V15.9219C18.2656 15.3906 18.0938 15.125 17.75 15.125C17.4062 15.125 17.2344 15.3906 17.2344 15.9219V16.4531ZM8.3125 12.2969V13.3906H7.0625V20H5.90625V13.3906H4.6875V12.2969H8.3125ZM11.4531 14.2656V20H10.4062V19.375C10 19.8438 9.60417 20.0781 9.21875 20.0781C8.875 20.0781 8.65625 19.9323 8.5625 19.6406C8.5 19.4635 8.46875 19.1823 8.46875 18.7969V14.2656H9.5V18.4844C9.5 18.7344 9.50521 18.8698 9.51562 18.8906C9.52604 19.0469 9.60417 19.125 9.75 19.125C9.95833 19.125 10.1771 18.9635 10.4062 18.6406V14.2656H11.4531ZM15.3906 16V18.2812C15.3906 18.8229 15.3542 19.2031 15.2812 19.4219C15.1562 19.8594 14.8802 20.0781 14.4531 20.0781C14.0885 20.0781 13.7344 19.8646 13.3906 19.4375V20H12.3438V12.2969H13.3906V14.8125C13.724 14.3958 14.0781 14.1875 14.4531 14.1875C14.8802 14.1875 15.1562 14.4062 15.2812 14.8438C15.3542 15.0625 15.3906 15.4479 15.3906 16ZM19.3125 18.0156V18.1562C19.3125 18.4583 19.3021 18.6823 19.2812 18.8281C19.25 19.0573 19.1719 19.2656 19.0469 19.4531C18.7656 19.8698 18.349 20.0781 17.7969 20.0781C17.2552 20.0781 16.8333 19.8802 16.5312 19.4844C16.3125 19.2031 16.2031 18.7552 16.2031 18.1406V16.125C16.2031 15.5104 16.3073 15.0625 16.5156 14.7812C16.8177 14.3854 17.2344 14.1875 17.7656 14.1875C18.2969 14.1875 18.7031 14.3854 18.9844 14.7812C19.2031 15.0833 19.3125 15.5312 19.3125 16.125V17.3125H17.2344V18.3281C17.2344 18.8594 17.4115 19.125 17.7656 19.125C18.0156 19.125 18.1719 18.9896 18.2344 18.7188C18.2344 18.7083 18.237 18.6719 18.2422 18.6094C18.2474 18.5469 18.25 18.4609 18.25 18.3516V18.0156H19.3125ZM12.2656 5.14062V7.57812C12.2656 8.10938 12.099 8.375 11.7656 8.375C11.4323 8.375 11.2656 8.10938 11.2656 7.57812V5.14062C11.2656 4.59896 11.4323 4.32812 11.7656 4.32812C12.099 4.32812 12.2656 4.59896 12.2656 5.14062ZM20.5938 16.2812C20.5938 14.4375 20.4948 13.0833 20.2969 12.2188C20.1927 11.7604 19.9688 11.3776 19.625 11.0703C19.2812 10.763 18.8854 10.5833 18.4375 10.5312C17.0208 10.375 14.875 10.2969 12 10.2969C9.13542 10.2969 6.99479 10.375 5.57812 10.5312C5.11979 10.5833 4.72135 10.763 4.38281 11.0703C4.04427 11.3776 3.82292 11.7604 3.71875 12.2188C3.51042 13.125 3.40625 14.4792 3.40625 16.2812C3.40625 18.1146 3.51042 19.4688 3.71875 20.3438C3.82292 20.7917 4.04427 21.1719 4.38281 21.4844C4.72135 21.7969 5.11458 21.9792 5.5625 22.0312C6.98958 22.1875 9.13542 22.2656 12 22.2656C14.8646 22.2656 17.0104 22.1875 18.4375 22.0312C18.8854 21.9792 19.2786 21.7969 19.6172 21.4844C19.9557 21.1719 20.1771 20.7917 20.2812 20.3438C20.4896 19.4688 20.5938 18.1146 20.5938 16.2812ZM8.79688 6.10938L10.2031 1.48438H9.03125L8.23438 4.53125L7.40625 1.48438H6.1875C6.26042 1.72396 6.38021 2.08333 6.54688 2.5625L6.92188 3.64062C7.28646 4.71354 7.52604 5.53646 7.64062 6.10938V9.25H8.79688V6.10938ZM13.3125 7.375V5.34375C13.3125 4.73958 13.2031 4.28646 12.9844 3.98438C12.6823 3.58854 12.276 3.39062 11.7656 3.39062C11.2344 3.39062 10.8281 3.58854 10.5469 3.98438C10.3281 4.28646 10.2188 4.73958 10.2188 5.34375V7.375C10.2188 7.97917 10.3281 8.43229 10.5469 8.73438C10.8281 9.13021 11.2344 9.32812 11.7656 9.32812C12.276 9.32812 12.6823 9.13021 12.9844 8.73438C13.2031 8.45312 13.3125 8 13.3125 7.375ZM16.1406 9.25H17.1875V3.46875H16.1406V7.89062C15.9115 8.21354 15.6927 8.375 15.4844 8.375C15.3281 8.375 15.2448 8.29167 15.2344 8.125C15.224 8.10417 15.2188 7.96875 15.2188 7.71875V3.46875H14.1719V8.04688C14.1719 8.43229 14.2031 8.71875 14.2656 8.90625C14.3802 9.1875 14.6042 9.32812 14.9375 9.32812C15.3125 9.32812 15.7135 9.09375 16.1406 8.625V9.25ZM24 4.5V19.5C24 20.7396 23.5599 21.7995 22.6797 22.6797C21.7995 23.5599 20.7396 24 19.5 24H4.5C3.26042 24 2.20052 23.5599 1.32031 22.6797C0.440104 21.7995 0 20.7396 0 19.5V4.5C0 3.26042 0.440104 2.20052 1.32031 1.32031C2.20052 0.440104 3.26042 0 4.5 0H19.5C20.7396 0 21.7995 0.440104 22.6797 1.32031C23.5599 2.20052 24 3.26042 24 4.5Z"
+                                                    fill="#C2C1C1" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_973_66">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="d-flex flex-column flex-lg-row justify-content-between align-items-center py-4 border-footer">
+                    <div class="d-flex text-center">
+                        <p class="d-none d-lg-inline">🇧🇷</p>
+                        <p class="ms-lg-3">&copy; Alisson, Inc. Todos os direitos reservados.</p>
+                    </div>
+                    <div class="footer-links d-none d-lg-flex d-flex flex-row gap-4">
+                        <a href="#">Guias</a>
+                        <a href="#">Termos de Uso</a>
+                        <a href="#">Dados da Empresa</a>
+                        <a href="#">Política de Privacidade e Cookies</a>
+                        <a href="#">Configurações de Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
 </body>
+
 </html>
